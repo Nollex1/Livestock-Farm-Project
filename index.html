@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Divine Kingdom Livestock Farm</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<!-- NAVBAR-->
+ <nav class="nav">
+    <div class="nav__inner">
+        <a href="#home" class="nav__brand">Divine Kingdom Farm </a>
+
+        <button class="nav__toggle" aria-label="open menu" aria-expanded="false">
+            =
+        </button> 
+
+        <uI class="nav__links"> 
+            <li><a href="#home" class="nav-link">Home</a></li>
+            <li><a href="#about" class="nav-link">About</a></li>
+            <li><a href="#tiers" class="nav-link">Tiers</a></li>
+            <li><a href="#update" class="nav-link">Update</a></li>
+            <li><a href="#contact" class="nav-link">Contact</a></li>
+        </uI>
+    </div>
+ </nav>
+
+    <header id="home">
+        <h1>Divine Kingdom Livestock Farm</h1>
+        <p>Invest in sustainable farming — over 8 plots and growing.</p>
+        <button>Become an Investor</button>
+    </header>
+
+    <section id="about">
+        <h2>About the Farm</h2>
+        <img src="images.jpg" width="400">  <img src="land 2.jpg" width="400"> <img src="land 3.jpg"  alt="our farm land" width="400">
+        <p> 
+            At <strong> Divine Kingdom Livestock Farm </strong>, our vision goes beyond raising animals.
+            We believe farming is the backbone of food security, wealth creation, and healthy living.
+            our goal is to create a system that grows high-quality livestock while empowering people who love the idea of farming but cannot go to the farm themselves.
+        </p>
+
+        <p> 
+            with every investment, you are not just supporting a farm - you are joining a movement.
+            Thia project is built for people who value agriculture but want a trusted partner to handle the work on thier behalf.
+            Together, we can bridge the gap between passion for farming and real farm operations.
+        </p> 
+
+        <p> 
+            Investors share in the profits while we manage the farm 100% - from land expansion to livestock care, Infrastructure and market distribution.
+            This means your money works for you while also contributing to food sustainability and rural development.
+        </p> 
+
+        <P> 
+            <em> let's build wealth, grow food, and make farming rewarding for everyone - together.</em>
+        </P>
+    </section>
+
+   <section id="budget">
+  <h2>Budget Breakdown</h2>
+  <table border="1">
+      <tr> 
+          <th>Category</th>
+          <th>Amount ($)</th>
+          <th>Percentage</th>
+      </tr>
+      <tr> 
+          <td>Land Expansion</td>
+          <td>5,000,000</td>
+          <td>33%</td>
+      </tr>
+      <tr> 
+          <td>Livestock Purchase</td>
+          <td>4,000,000</td>
+          <td>27%</td>
+      </tr>
+      <tr> 
+          <td>Farm Infrastructure</td>
+          <td>3,000,000</td>
+          <td>20%</td>
+      </tr>
+      <tr> 
+          <td>Staff & Operations</td>
+          <td>2,000,000</td>
+          <td>13%</td>
+      </tr>
+      <tr> 
+          <td>Marketing</td>
+          <td>1,000,000</td>
+          <td>7%</td>
+      </tr>
+  </table>
+</section>
+
+
+
+
+
+
+    <section id="tiers">
+  <h2>Investment Tiers</h2>
+  <ul>
+    <li>
+      <strong>Bronze Tier:</strong> $1,000 - Receive quarterly updates and a certificate of appreciation.<br>
+      <button class="invest-btn" 
+              data-tier="Bronze" 
+              data-amount="1000" 
+              data-benefits="Quarterly updates, Certificate of appreciation"
+              data-terms="Minimum 1-year commitment">Invest Now</button>
+    </li>
+    <li>
+      <strong>Silver Tier:</strong> $2,000 - Bronze benefits + a share of profits after the first harvest.<br>
+      <button class="invest-btn" 
+              data-tier="Silver" 
+              data-amount="2000" 
+              data-benefits="All Bronze benefits + Profit share after first harvest"
+              data-terms="Minimum 2-year commitment">Invest Now</button>
+    </li>
+    <li>
+      <strong>Gold Tier:</strong> $5,000 - Silver benefits + annual farm tour and name on our supporters' board.<br>
+      <button class="invest-btn" 
+              data-tier="Gold"  
+              data-amount="5000" 
+              data-benefits="All Silver benefits + Annual farm tour + Name on supporters' board"
+              data-terms="Minimum 3-year commitment">Invest Now</button>
+    </li>
+    <li>
+      <strong>Platinum Tier:</strong> $10,000 - Gold benefits + lifetime profit share and special VIP recognition.<br>
+      <button class="invest-btn" 
+              data-tier="Platinum" 
+              data-amount="10000" 
+              data-benefits="All Gold benefits + Lifetime profit share + VIP recognition"
+              data-terms="Lifetime commitment">Invest Now</button>
+    </li>
+  </ul>
+</section>
+
+<!-- Investment Modal -->
+ <div id="investmentModal" class="modal" style="display:none;">
+    <div class="modal-content">
+        <h3 id="modalPackage"></h3>
+       <p>Amount: $<span id="modalAmount"></span></p>
+        <p><strong>Benefits:</strong> <span id="modalBenefits"></span></p>
+        <p><strong>Terms:</strong> <span id="modalTerms"></span></p>
+        <button id="confirmInvestment"> Confirm Investment</button>
+        <button id="closeModal">Cancel</button>
+    </div>
+ </div>
+
+    <section id="update" aria-labelledby="updates-title"> 
+        <h2 id="updates-title"> Latest Updates</h2>
+
+        <article>
+           <h3> Coop Foundation Complete</h3>
+           <p> 
+            <time datetime="2025-08-10">25 Jul 2025</time> - we poured the slab and set posts.
+            Roofing begins next week.
+           </p>
+        </article>
+
+        <article> 
+            <h3> land Expansion Secured</h3>
+            <p>
+                <time datetime="2025-07-25">25 Jul 2025</time> - we acquired 2 additional plots to scale poultry and goats.
+            </p>
+        </article>
+
+        <article> 
+            <h3> First Livestock Arrived</h3>
+            <p>
+                <time datetime="2025-07-01">1 Jul 2025</time> - first batch of broilers and goats arrived and passed vet checks.
+            </p>
+        </article>
+    </section>
+
+    <section id="contact" aria-labelledby="contact-title">
+        <h2 id="contact-title"> Contact Us</h2>
+
+        <address> 
+            <strong> Divine Kingdom Livestock Farm</strong><br>
+            Enugu  State, Nigeria<br>
+            Phone: <a href="tel:+2348115455462">+234 811 545 5462</a><br>
+            Email: <a href="mailto:divinekingdomfarm@gmail.com">divinekingdomfarm@gmail.com</a>
+        </address>
+
+        <form id="contact-form" action="#" method="post">
+            <div> 
+                <label for="c-name">Full Name </label>
+                <input id="c-name" name="name" type="text" required autocomplete="name"/>
+            </div> 
+            
+            <div> 
+                <label for="c-email"> Email</label>
+                <input id="c-email" name="Email" type="email" required autocomplete="email"/>
+            </div> 
+
+            <div> 
+                <label for="c-message">Message</label>
+                <textarea id="c-message" name="Message" rows="5" required></textarea>
+            </div>
+
+            <button type="submit"> send Message</button>
+        </form>
+    </section>
+
+<footer class="site-footer">
+    <p> <span id="year"></span> Divine Kingdom Livestock Farm - All rights reserved.</p>
+</footer>
+<script src="index.js"></script>
+<button id="backToTop" aria-label="Back to top"></button>
+</body>
+</html>
